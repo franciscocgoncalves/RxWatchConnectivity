@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39116D96C422ACC44A7E8FC9 /* Pods_RxWatchConnectivity_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5B319CEBC6DD3CEFB8CC7E /* Pods_RxWatchConnectivity_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		BE62C8A78788E03C27008EA0 /* Pods_RxWatchConnectivity_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD958816DD275F127BACB120 /* Pods_RxWatchConnectivity_Tests.framework */; };
+		79D256FC1F02ED3E00E97A26 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D256FA1F02ED3E00E97A26 /* Interface.storyboard */; };
+		79D256FE1F02ED3E00E97A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D256FD1F02ED3E00E97A26 /* Assets.xcassets */; };
+		79D257051F02ED3F00E97A26 /* RxWatchConnectivity_watchOS_Example_Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 79D257041F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example_Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		79D2570A1F02ED3F00E97A26 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D257091F02ED3F00E97A26 /* InterfaceController.swift */; };
+		79D2570C1F02ED3F00E97A26 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D2570B1F02ED3F00E97A26 /* ExtensionDelegate.swift */; };
+		79D2570E1F02ED3F00E97A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D2570D1F02ED3F00E97A26 /* Assets.xcassets */; };
+		79D257121F02ED3F00E97A26 /* RxWatchConnectivity_watchOS_Example.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 79D256F81F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example.app */; };
+		9B84D1A73260330E4234B054 /* Pods_RxWatchConnectivity_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BF55D8730CE9DFE6D89A5B /* Pods_RxWatchConnectivity_Example.framework */; };
+		C6ED6994B248AF301D852756 /* Pods_RxWatchConnectivity_watchOS_Example_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5302D1820D1A173F51FB4D9 /* Pods_RxWatchConnectivity_watchOS_Example_Extension.framework */; };
+		CFF65FFBC1AEECC0C15251CE /* Pods_RxWatchConnectivity_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEFEAB5796077E324ABDE2D /* Pods_RxWatchConnectivity_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,11 +33,53 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = RxWatchConnectivity;
 		};
+		79D257061F02ED3F00E97A26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79D257031F02ED3E00E97A26;
+			remoteInfo = "Example for RxWatchConnectivity-watchOS Extension";
+		};
+		79D257101F02ED3F00E97A26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79D256F71F02ED3E00E97A26;
+			remoteInfo = "Example for RxWatchConnectivity-watchOS";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		79D257181F02ED3F00E97A26 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				79D257051F02ED3F00E97A26 /* RxWatchConnectivity_watchOS_Example_Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D2571A1F02ED3F00E97A26 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				79D257121F02ED3F00E97A26 /* RxWatchConnectivity_watchOS_Example.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2ADAE09CA6CE1907F433C286 /* Pods-RxWatchConnectivity_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWatchConnectivity_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxWatchConnectivity_Example/Pods-RxWatchConnectivity_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2F1A507A8232C66FC0295E04 /* RxWatchConnectivity.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RxWatchConnectivity.podspec; path = ../RxWatchConnectivity.podspec; sourceTree = "<group>"; };
+		117FC3C641193F7234AB71F3 /* Pods-RxWatchConnectivity_watchOS_Example_Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWatchConnectivity_watchOS_Example_Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxWatchConnectivity_watchOS_Example_Extension/Pods-RxWatchConnectivity_watchOS_Example_Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		2F1A507A8232C66FC0295E04 /* RxWatchConnectivity.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = RxWatchConnectivity.podspec; path = ../RxWatchConnectivity.podspec; sourceTree = "<group>"; };
+		43BF55D8730CE9DFE6D89A5B /* Pods_RxWatchConnectivity_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxWatchConnectivity_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEFEAB5796077E324ABDE2D /* Pods_RxWatchConnectivity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxWatchConnectivity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F271E52151361B433DFB420 /* Pods-RxWatchConnectivity_watchOS_Example_Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWatchConnectivity_watchOS_Example_Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxWatchConnectivity_watchOS_Example_Extension/Pods-RxWatchConnectivity_watchOS_Example_Extension.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RxWatchConnectivity_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxWatchConnectivity_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,13 +90,23 @@
 		607FACE51AFB9204008FA782 /* RxWatchConnectivity_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxWatchConnectivity_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6F5B319CEBC6DD3CEFB8CC7E /* Pods_RxWatchConnectivity_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxWatchConnectivity_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		71C7301E23BFEE31E180CC5E /* Pods-RxWatchConnectivity_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWatchConnectivity_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxWatchConnectivity_Example/Pods-RxWatchConnectivity_Example.release.xcconfig"; sourceTree = "<group>"; };
-		751DB921A9EB75F193EBB798 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		79CE6FC46A19719E149B7C05 /* Pods-RxWatchConnectivity_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWatchConnectivity_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxWatchConnectivity_Tests/Pods-RxWatchConnectivity_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C223867DACA85F8859EED008 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		CD958816DD275F127BACB120 /* Pods_RxWatchConnectivity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxWatchConnectivity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD56AC2429CBD6F967382411 /* Pods-RxWatchConnectivity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWatchConnectivity_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxWatchConnectivity_Tests/Pods-RxWatchConnectivity_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6AB8F9A8B0BFC68E8A464FDA /* Pods-RxWatchConnectivity_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWatchConnectivity_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxWatchConnectivity_Tests/Pods-RxWatchConnectivity_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		751DB921A9EB75F193EBB798 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		792F5E5A7E4A9130B366FDFD /* Pods-RxWatchConnectivity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWatchConnectivity_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxWatchConnectivity_Tests/Pods-RxWatchConnectivity_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		79D256F81F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxWatchConnectivity_watchOS_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D256FB1F02ED3E00E97A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		79D256FD1F02ED3E00E97A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79D256FF1F02ED3E00E97A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79D257041F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example_Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RxWatchConnectivity_watchOS_Example_Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D257091F02ED3F00E97A26 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		79D2570B1F02ED3F00E97A26 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		79D2570D1F02ED3F00E97A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79D2570F1F02ED3F00E97A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D143359773A11699A2E736 /* Pods-RxWatchConnectivity_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWatchConnectivity_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxWatchConnectivity_Example/Pods-RxWatchConnectivity_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C223867DACA85F8859EED008 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E9A6952A2C2A465918CEA63C /* Pods-RxWatchConnectivity_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWatchConnectivity_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxWatchConnectivity_Example/Pods-RxWatchConnectivity_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F5302D1820D1A173F51FB4D9 /* Pods_RxWatchConnectivity_watchOS_Example_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxWatchConnectivity_watchOS_Example_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5667EFF960F25C3AD3BF410 /* Pods_RxWatchConnectivity_watchOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxWatchConnectivity_watchOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39116D96C422ACC44A7E8FC9 /* Pods_RxWatchConnectivity_Example.framework in Frameworks */,
+				9B84D1A73260330E4234B054 /* Pods_RxWatchConnectivity_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,33 +122,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE62C8A78788E03C27008EA0 /* Pods_RxWatchConnectivity_Tests.framework in Frameworks */,
+				CFF65FFBC1AEECC0C15251CE /* Pods_RxWatchConnectivity_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D257011F02ED3E00E97A26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6ED6994B248AF301D852756 /* Pods_RxWatchConnectivity_watchOS_Example_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EEAF52DB0C296E5A54CC55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4BAA6F29D3179210BEA94E16 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2ADAE09CA6CE1907F433C286 /* Pods-RxWatchConnectivity_Example.debug.xcconfig */,
-				71C7301E23BFEE31E180CC5E /* Pods-RxWatchConnectivity_Example.release.xcconfig */,
-				79CE6FC46A19719E149B7C05 /* Pods-RxWatchConnectivity_Tests.debug.xcconfig */,
-				FD56AC2429CBD6F967382411 /* Pods-RxWatchConnectivity_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for RxWatchConnectivity */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				79D256F91F02ED3E00E97A26 /* Example for RxWatchConnectivity-watchOS */,
+				79D257081F02ED3F00E97A26 /* Example for RxWatchConnectivity-watchOS Extension */,
 				607FACD11AFB9204008FA782 /* Products */,
-				4BAA6F29D3179210BEA94E16 /* Pods */,
-				F5D1706A32B3AF246501366B /* Frameworks */,
+				AFEA23DFCC399F2937A66788 /* Pods */,
+				C84855ACE69C4923C72089F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +163,8 @@
 			children = (
 				607FACD01AFB9204008FA782 /* RxWatchConnectivity_Example.app */,
 				607FACE51AFB9204008FA782 /* RxWatchConnectivity_Tests.xctest */,
+				79D256F81F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example.app */,
+				79D257041F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example_Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,11 +218,47 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		F5D1706A32B3AF246501366B /* Frameworks */ = {
+		79D256F91F02ED3E00E97A26 /* Example for RxWatchConnectivity-watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				6F5B319CEBC6DD3CEFB8CC7E /* Pods_RxWatchConnectivity_Example.framework */,
-				CD958816DD275F127BACB120 /* Pods_RxWatchConnectivity_Tests.framework */,
+				79D256FA1F02ED3E00E97A26 /* Interface.storyboard */,
+				79D256FD1F02ED3E00E97A26 /* Assets.xcassets */,
+				79D256FF1F02ED3E00E97A26 /* Info.plist */,
+			);
+			path = "Example for RxWatchConnectivity-watchOS";
+			sourceTree = "<group>";
+		};
+		79D257081F02ED3F00E97A26 /* Example for RxWatchConnectivity-watchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				79D257091F02ED3F00E97A26 /* InterfaceController.swift */,
+				79D2570B1F02ED3F00E97A26 /* ExtensionDelegate.swift */,
+				79D2570D1F02ED3F00E97A26 /* Assets.xcassets */,
+				79D2570F1F02ED3F00E97A26 /* Info.plist */,
+			);
+			path = "Example for RxWatchConnectivity-watchOS Extension";
+			sourceTree = "<group>";
+		};
+		AFEA23DFCC399F2937A66788 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9A6952A2C2A465918CEA63C /* Pods-RxWatchConnectivity_Example.debug.xcconfig */,
+				A7D143359773A11699A2E736 /* Pods-RxWatchConnectivity_Example.release.xcconfig */,
+				6AB8F9A8B0BFC68E8A464FDA /* Pods-RxWatchConnectivity_Tests.debug.xcconfig */,
+				792F5E5A7E4A9130B366FDFD /* Pods-RxWatchConnectivity_Tests.release.xcconfig */,
+				117FC3C641193F7234AB71F3 /* Pods-RxWatchConnectivity_watchOS_Example_Extension.debug.xcconfig */,
+				4F271E52151361B433DFB420 /* Pods-RxWatchConnectivity_watchOS_Example_Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C84855ACE69C4923C72089F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43BF55D8730CE9DFE6D89A5B /* Pods_RxWatchConnectivity_Example.framework */,
+				4AEFEAB5796077E324ABDE2D /* Pods_RxWatchConnectivity_Tests.framework */,
+				F5667EFF960F25C3AD3BF410 /* Pods_RxWatchConnectivity_watchOS_Example.framework */,
+				F5302D1820D1A173F51FB4D9 /* Pods_RxWatchConnectivity_watchOS_Example_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,16 +270,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "RxWatchConnectivity_Example" */;
 			buildPhases = (
-				584BA4BCFB45199F975290DD /* [CP] Check Pods Manifest.lock */,
+				A28E32B2C93875BA2A84AA27 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				8CC7E71E2128529A3B116297 /* [CP] Embed Pods Frameworks */,
-				D91645FA24577840EA833B68 /* [CP] Copy Pods Resources */,
+				ABB76D2914D02A41D9709682 /* [CP] Embed Pods Frameworks */,
+				AD22A516AF46C7BB099767BA /* [CP] Copy Pods Resources */,
+				79D2571A1F02ED3F00E97A26 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				79D257111F02ED3F00E97A26 /* PBXTargetDependency */,
 			);
 			name = RxWatchConnectivity_Example;
 			productName = RxWatchConnectivity;
@@ -186,12 +292,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "RxWatchConnectivity_Tests" */;
 			buildPhases = (
-				61C5E8C9308A767248C537F1 /* [CP] Check Pods Manifest.lock */,
+				7307CE18912587F260EE2EC7 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				4F5FC634FF3F8F9EF09DD481 /* [CP] Embed Pods Frameworks */,
-				8AF858408D945639701A4863 /* [CP] Copy Pods Resources */,
+				7F1E22948A21DC3BA5271C82 /* [CP] Embed Pods Frameworks */,
+				B5DE65EB83814D26D50857E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,13 +309,51 @@
 			productReference = 607FACE51AFB9204008FA782 /* RxWatchConnectivity_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		79D256F71F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79D257191F02ED3F00E97A26 /* Build configuration list for PBXNativeTarget "RxWatchConnectivity_watchOS_Example" */;
+			buildPhases = (
+				79D256F61F02ED3E00E97A26 /* Resources */,
+				79D257181F02ED3F00E97A26 /* Embed App Extensions */,
+				82EEAF52DB0C296E5A54CC55 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79D257071F02ED3F00E97A26 /* PBXTargetDependency */,
+			);
+			name = RxWatchConnectivity_watchOS_Example;
+			productName = "Example for RxWatchConnectivity-watchOS";
+			productReference = 79D256F81F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		79D257031F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example_Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79D257171F02ED3F00E97A26 /* Build configuration list for PBXNativeTarget "RxWatchConnectivity_watchOS_Example_Extension" */;
+			buildPhases = (
+				0CB74ED80949EE4263691C7A /* [CP] Check Pods Manifest.lock */,
+				79D257001F02ED3E00E97A26 /* Sources */,
+				79D257011F02ED3E00E97A26 /* Frameworks */,
+				79D257021F02ED3E00E97A26 /* Resources */,
+				7EF18252F4FE06A789A0DAF2 /* [CP] Embed Pods Frameworks */,
+				E8514AE260F21A7A972D6926 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxWatchConnectivity_watchOS_Example_Extension;
+			productName = "Example for RxWatchConnectivity-watchOS Extension";
+			productReference = 79D257041F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example_Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -221,6 +365,15 @@
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					79D256F71F02ED3E00E97A26 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					79D257031F02ED3E00E97A26 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 57ZR3QW87Q;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -239,6 +392,8 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* RxWatchConnectivity_Example */,
 				607FACE41AFB9204008FA782 /* RxWatchConnectivity_Tests */,
+				79D256F71F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example */,
+				79D257031F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example_Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -261,55 +416,164 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79D256F61F02ED3E00E97A26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D256FE1F02ED3E00E97A26 /* Assets.xcassets in Resources */,
+				79D256FC1F02ED3E00E97A26 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D257021F02ED3E00E97A26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D2570E1F02ED3F00E97A26 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4F5FC634FF3F8F9EF09DD481 /* [CP] Embed Pods Frameworks */ = {
+		0CB74ED80949EE4263691C7A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxWatchConnectivity_watchOS_Example_Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7307CE18912587F260EE2EC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxWatchConnectivity_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EF18252F4FE06A789A0DAF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxWatchConnectivity_watchOS_Example_Extension/Pods-RxWatchConnectivity_watchOS_Example_Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Result-watchOS/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-watchOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxWatchConnectivity-watchOS/RxWatchConnectivity.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxWatchConnectivity.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxWatchConnectivity_watchOS_Example_Extension/Pods-RxWatchConnectivity_watchOS_Example_Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F1E22948A21DC3BA5271C82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxWatchConnectivity_Tests/Pods-RxWatchConnectivity_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxWatchConnectivity_Tests/Pods-RxWatchConnectivity_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		584BA4BCFB45199F975290DD /* [CP] Check Pods Manifest.lock */ = {
+		A28E32B2C93875BA2A84AA27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxWatchConnectivity_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABB76D2914D02A41D9709682 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxWatchConnectivity_Example/Pods-RxWatchConnectivity_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Result-iOS/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxWatchConnectivity-iOS/RxWatchConnectivity.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxWatchConnectivity.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxWatchConnectivity_Example/Pods-RxWatchConnectivity_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD22A516AF46C7BB099767BA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxWatchConnectivity_Example/Pods-RxWatchConnectivity_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		61C5E8C9308A767248C537F1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8AF858408D945639701A4863 /* [CP] Copy Pods Resources */ = {
+		B5DE65EB83814D26D50857E3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,22 +588,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxWatchConnectivity_Tests/Pods-RxWatchConnectivity_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8CC7E71E2128529A3B116297 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxWatchConnectivity_Example/Pods-RxWatchConnectivity_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D91645FA24577840EA833B68 /* [CP] Copy Pods Resources */ = {
+		E8514AE260F21A7A972D6926 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -351,7 +600,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxWatchConnectivity_Example/Pods-RxWatchConnectivity_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxWatchConnectivity_watchOS_Example_Extension/Pods-RxWatchConnectivity_watchOS_Example_Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -374,6 +623,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79D257001F02ED3E00E97A26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D2570C1F02ED3F00E97A26 /* ExtensionDelegate.swift in Sources */,
+				79D2570A1F02ED3F00E97A26 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -381,6 +639,16 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* RxWatchConnectivity_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		79D257071F02ED3F00E97A26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79D257031F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example_Extension */;
+			targetProxy = 79D257061F02ED3F00E97A26 /* PBXContainerItemProxy */;
+		};
+		79D257111F02ED3F00E97A26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79D256F71F02ED3E00E97A26 /* RxWatchConnectivity_watchOS_Example */;
+			targetProxy = 79D257101F02ED3F00E97A26 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -399,6 +667,14 @@
 				607FACDF1AFB9204008FA782 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		79D256FA1F02ED3E00E97A26 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79D256FB1F02ED3E00E97A26 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -443,7 +719,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -483,7 +759,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -493,10 +769,11 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ADAE09CA6CE1907F433C286 /* Pods-RxWatchConnectivity_Example.debug.xcconfig */;
+			baseConfigurationReference = E9A6952A2C2A465918CEA63C /* Pods-RxWatchConnectivity_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RxWatchConnectivity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -507,10 +784,11 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71C7301E23BFEE31E180CC5E /* Pods-RxWatchConnectivity_Example.release.xcconfig */;
+			baseConfigurationReference = A7D143359773A11699A2E736 /* Pods-RxWatchConnectivity_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RxWatchConnectivity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -521,7 +799,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79CE6FC46A19719E149B7C05 /* Pods-RxWatchConnectivity_Tests.debug.xcconfig */;
+			baseConfigurationReference = 6AB8F9A8B0BFC68E8A464FDA /* Pods-RxWatchConnectivity_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -541,7 +819,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD56AC2429CBD6F967382411 /* Pods-RxWatchConnectivity_Tests.release.xcconfig */;
+			baseConfigurationReference = 792F5E5A7E4A9130B366FDFD /* Pods-RxWatchConnectivity_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -552,6 +830,94 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		79D257131F02ED3F00E97A26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				IBSC_MODULE = Example_for_RxWatchConnectivity_watchOS_Extension;
+				INFOPLIST_FILE = "Example for RxWatchConnectivity-watchOS/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.RxWatchConnectivity-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		79D257141F02ED3F00E97A26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				IBSC_MODULE = Example_for_RxWatchConnectivity_watchOS_Extension;
+				INFOPLIST_FILE = "Example for RxWatchConnectivity-watchOS/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.RxWatchConnectivity-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		79D257151F02ED3F00E97A26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 117FC3C641193F7234AB71F3 /* Pods-RxWatchConnectivity_watchOS_Example_Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 57ZR3QW87Q;
+				INFOPLIST_FILE = "Example for RxWatchConnectivity-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.RxWatchConnectivity-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		79D257161F02ED3F00E97A26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F271E52151361B433DFB420 /* Pods-RxWatchConnectivity_watchOS_Example_Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = 57ZR3QW87Q;
+				INFOPLIST_FILE = "Example for RxWatchConnectivity-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.RxWatchConnectivity-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
 			name = Release;
 		};
@@ -581,6 +947,24 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79D257171F02ED3F00E97A26 /* Build configuration list for PBXNativeTarget "RxWatchConnectivity_watchOS_Example_Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D257151F02ED3F00E97A26 /* Debug */,
+				79D257161F02ED3F00E97A26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79D257191F02ED3F00E97A26 /* Build configuration list for PBXNativeTarget "RxWatchConnectivity_watchOS_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D257131F02ED3F00E97A26 /* Debug */,
+				79D257141F02ED3F00E97A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

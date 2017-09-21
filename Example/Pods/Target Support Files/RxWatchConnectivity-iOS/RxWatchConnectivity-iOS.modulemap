@@ -1,0 +1,6 @@
+framework module RxWatchConnectivity {
+  umbrella header "RxWatchConnectivity-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

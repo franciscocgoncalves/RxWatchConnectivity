@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RxWatchConnectivity_watchOS_Example_Extension">
+                    <items>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="🐵" id="i5j-4h-uwB">
+                            <connections>
+                                <action selector="buttonTapped" destination="AgC-eL-Hgc" id="D1o-c9-gbb"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="center" id="L50-yF-Nms"/>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="L50-yF-Nms" id="12G-4W-sLz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="74" y="56"/>
+        </scene>
+    </scenes>
+</document>

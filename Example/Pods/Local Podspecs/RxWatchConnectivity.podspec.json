@@ -1,0 +1,46 @@
+{
+  "name": "RxWatchConnectivity",
+  "version": "0.1.0",
+  "summary": "RxSwift extensions for RxWatchConnectivity framework.",
+  "description": "This pod provides extensions for RxWatchConnectivity framework.",
+  "homepage": "https://github.com/franciscocgoncalves/RxWatchConnectivity",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "franciscocgoncalves": "franciscocgoncalves@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/franciscocgoncalves/RxWatchConnectivity.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/franciscocsg",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "9.3",
+    "watchos": "2.3"
+  },
+  "source_files": "RxWatchConnectivity/Classes/Common/**/*",
+  "ios": {
+    "source_files": "RxWatchConnectivity/Classes/iOS/**/*"
+  },
+  "watchos": {
+    "source_files": "RxWatchConnectivity/Classes/watchOS/**/*"
+  },
+  "frameworks": [
+    "Foundation",
+    "WatchConnectivity"
+  ],
+  "dependencies": {
+    "RxSwift": [
+
+    ],
+    "RxCocoa": [
+
+    ],
+    "Result": [
+
+    ]
+  }
+}

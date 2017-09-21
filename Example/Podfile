@@ -3,10 +3,18 @@ use_frameworks!
 target 'RxWatchConnectivity_Example' do
   pod 'RxWatchConnectivity', :path => '../'
 
+  platform :ios, '9.3'
+
   target 'RxWatchConnectivity_Tests' do
     inherit! :search_paths
 
     pod 'Quick', '~> 1.0.0'
-  pod 'Nimble', '~> 5.1.1'
+    pod 'Nimble', '~> 5.1.1'
   end
+end
+
+target 'RxWatchConnectivity_watchOS_Example_Extension' do
+  pod 'RxWatchConnectivity', :path => '../'
+
+  platform :watchos, '2.3'
 end
